@@ -9,14 +9,14 @@ class Config:
 
 class DevelopmentConfig(Config):
     DEBUG = True
-    SQLALCHEMY_DATABASE_URI = 'postgresql://postgres:password@localhost/restplusdb'
+    SQLALCHEMY_DATABASE_URI = 'postgresql://postgres:password@localhost/restdatabse'
     SQLALCHEMY_TRACK_MODIFICATIONS = False
 
 
 class TestingConfig(Config):
     DEBUG = True
     TESTING = True
-    SQLALCHEMY_DATABASE_URI = 'postgresql://postgres:password@localhost/restplusdb'
+    SQLALCHEMY_DATABASE_URI = 'postgresql://postgres:password@localhost/restdatabse'
     PRESERVE_CONTEXT_ON_EXCEPTION = False
     SQLALCHEMY_TRACK_MODIFICATIONS = False
 
